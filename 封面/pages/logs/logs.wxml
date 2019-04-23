@@ -1,0 +1,41 @@
+<!-- <view class='page_row' bindtap="sou">  
+  <view class="search">  
+    <view class="df search_arr">  
+      <icon class="searchcion" size='20' type='search'></icon>  
+      <input bindtap='bindButtonTap' class="" disabled placeholder="我的位置" value="{{position}}"/>  
+    </view>  
+  </view>  
+  <view class='sousuo'>确定</view>  
+</view>
+<view class='page_row' bindtap="suo">  
+  <view class="search">  
+    <view class="df search_arr">  
+      <icon class="searchcion" size='20' type='search'></icon>  
+      <input bindtap='bindButtonTap' class="" disabled placeholder="目的地" value="{{destination}}"/>  
+    </view>  
+  </view>  
+  <view class='sousuo'>确定</view>  
+</view> -->
+
+<block wx:for="{{logs}}" wx:for-index="idx" wx:for-item="log" wx:key="log">
+  <view class='jump_map' bindtap='showList' id="{{idx}}">
+    <view class='best_time_walk'>
+      <view class='time'>{{log.time}}</view>
+      <image class='position' src='../../images/walking_16px_1170026_easyicon.net.ico'></image>
+      <view class='far'>{{log.far}}</view>
+    </view>
+    <view class='column'>
+      <view class='row'>
+        <view class='name'>{{log.name}}</view>
+        <view class='tri' wx:if="{{log.boolean}}"></view>
+        <view class='tran'>{{log.tran}}</view>
+      </view>
+      <view class='stations_mon_on'>
+        {{log.stations}}站 • {{log.money}}元 • {{log.on}}上车
+      </view>
+    </view>
+    <view class='skip'>
+      <image class='now_go' bindtap='showTomap'src='../../images/augmented_game_go_gym_pokemon_reality_video_24px_1212578_easyicon.net.ico'></image>
+    </view>
+  </view>
+</block>

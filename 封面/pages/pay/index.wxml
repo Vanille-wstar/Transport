@@ -1,0 +1,16 @@
+<view class="usermotto">
+<view>
+  <button class="wa-button wa-button-sm">扫码支付</button>
+</view>
+<view>
+  <image class="picture" src="../../images/码1.png"></image>
+</view>
+<view class='container'>
+<view>
+  <button bindtap="clickMe" class="btn1" bindtap='jumpPage'>余额</button>
+</view>
+<view>
+  <button bindtap="clickMe" class="btn2" bindtap='jumpPage'>充值</button>
+</view>
+</view>
+</view>

@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="usermotto">
+  <view class="my_title">
+    <!-- 搜索 -->
+    <view class="section">
+      <input class="input" bindinput="bindReplaceInput" placeholder="Select Bus Stop" bindtap='jumpPage'/>
+    </view>
+    <view class="search_icon">
+      <image style="width:55rpx;height:55rpx" src="../../images/search.png">
+      </image>
+    </view>
+    <view class="sort_icon">
+      <image style="width:55rpx;height:55rpx" src="../../images/sort-amount-desc.png">
+      </image>
+    </view>
+  </view>
+  <!--<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="查询的站点/目的地" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+        <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="jump">
+      <text wx:if="{{wxSearchData.value.length>0}}" data-key='search'>搜索</text>
+      <text wx:else data-key='back'>搜索</text>
+    </view>
+  </view>-->
+</view>
+<view class="picture">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+
+    <swiper-item>
+      <image src="../../images/205.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/311.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/357.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/358.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/388.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/立珊线.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/旅1.JPG" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+
+  </swiper>
+</view>
+
+<view class="container">
+  <button bindtap="clickMe" class="btn" bindtap='jumpPageTo'>付款</button>
+</view>

@@ -1,0 +1,53 @@
+.bus_infomation .bus_name{
+  border: 1rpx solid blue;
+  border-radius: 25rpx;
+  color: blue;
+}
+.bus_infomation{
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0 0 80rpx 0;
+}
+.bus_infomation .infomation{
+  color: rgb(179,179,179);
+  font-size: 35rpx;
+}
+/* 车站列表 */
+.container{
+  border-top: 13rpx solid  rgb(224, 221, 221);
+  align-items: flex-start;
+  padding: 60rpx;
+}
+.container .box{
+  width: 100%;
+  border: 3rpx 0;
+  border-style: solid none;
+  border-color: rgb(224, 221, 221);
+}
+.container .box .images .left_image{
+  width: 32rpx;
+  height: 32rpx;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(224, 221, 221);
+}
+.container .box .images .bus{
+  width: 32rpx;
+  height: 32rpx;
+  border: none;
+  border-radius: 0;
+}
+.container .box .images .addition{
+  color: rgb(179,179,179);
+}
+.container .box .images{
+  margin: 20rpx 0;
+}
+.container .box .images view{
+  display: flex;
+}
+image{
+  width: 32rpx;
+  height: 32rpx;
+}

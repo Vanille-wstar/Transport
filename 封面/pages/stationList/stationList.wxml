@@ -1,0 +1,36 @@
+<view class='bus_infomation'>
+  <view class='bus_name'>{{title_bus_name}}</view>
+  <view class='infomation'>{{title_bus_info}}</view>
+</view>
+<view class='container'>
+  <block wx:for='{{items}}' wx:for-item='items' wx:key='items'> 
+    <view class='box'>
+      <view class='images'>    
+        <view wx:if='{{items.start_station}}'>
+          <image class='bus' src='../../images/dot_green_24px_1174477_easyicon.net.ico'></image> 
+          <view class='addition'>•  •  • 首发站</view>
+        </view>
+        <view wx:elif='{{items.on_station}}'>
+          <image class='bus' src='../../images/radio_button_on_24px_1182156_easyicon.net.ico'></image> 
+          <view class='addition'>•  •  • 出发站</view>
+        </view>
+        <view wx:elif='{{items.now}}'>
+          <image class='bus' src='../../images/bus_32px_1219492_easyicon.net.ico'></image> 
+          <view class='addition'>•  •  • 当前站点</view>
+        </view>
+        <view wx:elif='{{items.destination_station}}'>
+          <image class='bus' src='../../images/radio_checked_24px_1158139_easyicon.net.ico'></image> 
+          <view class='addition'>•  •  • 目的站</view>
+        </view>
+        <view wx:elif='{{items.end_station}}'>
+          <image class='bus' src='../../images/trafficlight_red_24px_1187358_easyicon.net.ico'></image> 
+          <view class='addition'>•  •  • 终点站</view>
+        </view>
+        <view class='left_image' wx:else></view>
+      </view>
+      <view class='station_name'>
+        <view class='names'>{{items.stations}}</view>
+      </view>  
+    </view>
+  </block>
+</view>

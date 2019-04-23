@@ -1,0 +1,57 @@
+/**index.wxss**/
+.usermotto {
+ width: 100%;
+}
+
+.btn{
+  margin-bottom: 2px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(157, 158, 163, 0.267);
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+  margin: 10px;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+
+.my_title{
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+  padding:20px;
+}
+
+.logo{
+  flex:7;
+}
+
+.search_icon{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.sort_icon{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+.wx-swiper-dots{position:relative;left: unset!important;right: 0;}
+
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+
+margin-bottom: -5rpx;
+
+}

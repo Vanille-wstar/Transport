@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "CSU Tansporter",
+  "usingComponents":{
+    "MyTitle":"../../components/MyTitle/MyTitle"
+  }
+}

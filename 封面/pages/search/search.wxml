@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="main">
+<!-- 头部 -->
+  <view class="my_title">
+    <!-- 搜索 -->
+    <view class="section">
+      <input class="input" bindinput="bindReplaceInput" placeholder="Select Bus Stop" />
+    </view>
+    <view class="search_icon">
+      <image style="width:55rpx;height:55rpx" src="../../images/search.png">
+      </image>
+    </view>
+    <view class="sort_icon">
+      <image style="width:55rpx;height:55rpx" src="../../images/sort-amount-desc.png">
+      </image>
+    </view>
+  </view>
+  <!--首页搜索导航 -->
+  <view class="nav_wrap">
+    <!--滚动区域组件-->
+    <scroll-view class="nav" scroll-y>
+      <view class="nav_item active" wx:for="{{navList}}" wx:key="{{index}}">
+        {{item.text}} 
+        <image class="imag" catchtap='change' style="width:50rpx;height:50rpx;" wx:if="{{click}}" src='/images/shoucangq.png'></image>
+        <image class="imag" style="width:50rpx;height:50rpx;" wx:else src='/images/shoucangh.png'></image>
+      </view>
+    </scroll-view>
+    </view>
+</view>
